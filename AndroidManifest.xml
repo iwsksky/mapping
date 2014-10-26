@@ -47,6 +47,18 @@
             android:name=".Imagelist"
             android:label="@string/title_activity_imagelist" >
         </activity>
+        <activity
+            android:name=".Top"
+            android:label="@string/title_activity_top" >
+        </activity>
+        <activity
+            android:name=".Canvas"
+            android:label="@string/title_activity_canvas" >
+        </activity>
+        <activity
+            android:name=".GV"
+            android:label="@string/title_activity_gv" >
+        </activity>
     </application>
 
 </manifest>

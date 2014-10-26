@@ -56,9 +56,10 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
 		try{
 			Calendar cal = Calendar.getInstance();
 			String tmp = "'"+cal.get(Calendar.YEAR) + (cal.get(Calendar.MONTH) + 1) + cal.get(Calendar.DATE) + cal.get(Calendar.HOUR_OF_DAY) + cal.get(Calendar.MINUTE) +cal.get(Calendar.SECOND);
-			String path=Environment.getExternalStorageDirectory()+"/camera/"+"/"+tmp+".jpg";
+			String path=Environment.getExternalStorageDirectory()+"/"+tmp+".jpg";
 			data2file(data,path);
-			camera.startPreview();}
+			camera.startPreview();
+			}
 		catch(Exception e){}
 		
 	}

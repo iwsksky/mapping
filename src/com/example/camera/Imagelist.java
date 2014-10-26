@@ -26,12 +26,17 @@ public class Imagelist extends ActionBarActivity {
 	private String[] info;
 	private String[] stringArray;
 	private int l = 0;
+	private float[] latitude;
+	private float[] longtitude;
+	private int f=5;
+
 	
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_imagelist);
 		String path = Environment.getExternalStorageDirectory().getPath();
+		
 		
 		
 		FilenameFilter fFilter = new FilenameFilter() {
@@ -75,7 +80,25 @@ public class Imagelist extends ActionBarActivity {
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, data);
 		lv.setAdapter(adapter);
 	
+		
+	
 	}
+	public float[] getlatitude(){
+		longtitude[0]=36;
+		latitude[0]=140;
+		return latitude;
+	}
+	public float[] getlongtitude(){
+		
+		longtitude[0]=36;
+		latitude[0]=140;
+		return longtitude;
+		
+	}
+	public static int plus(int a,int b){
+		return a+b;
+	}
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -95,4 +118,5 @@ public class Imagelist extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
 }

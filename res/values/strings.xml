@@ -9,5 +9,11 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_thumbnail">Thumbnail</string>
     <string name="title_activity_imagelist">Imagelist</string>
+    <string name="title_activity_top">Top</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_canvas">Canvas</string>
+    <string name="title_activity_gv">GV</string>
 
 </resources>
